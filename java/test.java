@@ -10,7 +10,7 @@ public class test {
         System.out.println("Enter height:");
         double h = Integer.parseInt(scan.nextLine());
 
-        if (r <= 0) {
+        if (r <= 0 || h <= 0) {
             throw new Error("Numbers can't be negative");
         }
         System.out.println(String.format("S = %.2f",s(r)));
