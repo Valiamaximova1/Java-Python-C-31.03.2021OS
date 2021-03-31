@@ -1,0 +1,11 @@
+import math
+r = float(input('Enter r: '))
+h = float(input('Enter h: '))
+ 
+if r<= 0 or h<= 0:
+    print('Numbers can\'t be negative!')
+else:
+    S = math.pi * r *r
+    Volume = math.pi * r * r * h
+    print('S = ' + str(S))
+    print('V = ' + str(Volume))
