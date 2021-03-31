@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+ 
+int main()
+{
+    float r, h, S, V;
+    printf("Enter radius: ");
+    scanf("%f", &r);
+    printf("Enter height: ");
+    scanf("%f", &h);
+    
+    if (r <= 0 || h <= 0)
+    {
+        printf("Numbers can't be negative!\n");
+        return 1;
+    }
+    
+    S = M_PI * r *r;
+    V = M_PI * r * r * h;
+    printf("S = %.2f\n", S);
+    printf("V = %.2f\n", V);
+    return 0;  
+}
